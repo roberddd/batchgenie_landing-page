@@ -1,0 +1,56 @@
+/* /* .md-header-nav, .md-sidebar, .md-footer {
+  display: none;
+} */
+.md-main {
+  margin: 0 auto;
+  max-width: 100%;
+} */
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .img-box {
+    float: none;
+    margin: 0 auto 15px auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  /* Target images aligned right */
+  .img-box[align="right"] {
+     float: right; /* Solves issue on mobile for images that are floating right... so float it right again.. two rights make wrong */
+    /* margin-left: 0px;
+    margin-right: auto;  */
+  }
+}
+
+
+
+.md-typeset .md-button--stretch {
+  width: 99%;
+  text-align: center;
+}
+.img-box{
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+
+/* Custom 'info2' admonition */
+:root {
+  --md-admonition-icon--info2: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>');
+}
+.md-typeset .admonition.info2,
+.md-typeset details.info2 {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .info2 > .admonition-title,
+.md-typeset .info2 > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .info2 > .admonition-title::before,
+.md-typeset .info2 > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--info2);
+          mask-image: var(--md-admonition-icon--info2);
+}
+
