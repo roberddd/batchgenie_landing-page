@@ -40,11 +40,6 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons/ #Icons can be a bit slow to update when adding new
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
