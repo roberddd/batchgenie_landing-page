@@ -7,11 +7,13 @@
 } */
 
 
+
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .img-box {
     float: none;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
     max-width: 100%;
     width: 100%;
   }
@@ -24,6 +26,9 @@
 }
 
 
+.md-typeset h1 {
+  margin-bottom: calc(1em - 35px);
+}
 
 .md-typeset .md-button--stretch {
   width: 99%;

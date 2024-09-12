@@ -4,21 +4,21 @@ theme:
   custom_dir: overrides #Remember to save mkdocs.yml to refresh the overrides
   favicon: favicon.svg
   language: en
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-      primary: indigo
-      accent: orange
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-      primary: indigo
-      accent: orange
+  # palette:
+  #   - media: "(prefers-color-scheme: light)"
+  #     scheme: default
+  #     toggle:
+  #       icon: material/brightness-7
+  #       name: Switch to dark mode
+  #     primary: indigo
+  #     accent: orange
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   toggle:
+    #     icon: material/brightness-4
+    #     name: Switch to light mode
+    #   primary: indigo
+    #   accent: orange
 
 extra_css:
   - extra.css

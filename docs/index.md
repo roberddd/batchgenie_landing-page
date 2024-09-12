@@ -8,24 +8,55 @@ hide:
 # <!-- This removes the title -->
 Welcome to **BatchGenie**, an add-on designed to simplify and automate common Asset related tasks in Blender.
 
-## Key Features
+# Key Features
 
-- **Batch Import PBR Textures**: BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
+<!-- - **Batch Import PBR Textures**: BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
 - **Batch Render Asset Previews**: Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
 - **Batch Utilities**: Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
 
     <br>
-    **For a full breakdown of all features, check the "Full Feature List" section at the bottom.**
+    **For a full breakdown of all features, check the "Full Feature List" section at the bottom.** -->
+
+<div class="grid cards" markdown>
+
+-   :material-image-multiple:{ .lg .middle } __Batch Import PBR Textures__
+
+    ---
+
+    BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
+
+-   :material-camera:{ .lg .middle } __Batch Render Asset Previews__
+
+    ---
+
+    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
+
+-   :material-tools:{ .lg .middle } __Batch Utilities__
+
+    ---
+
+    Change the colors, fonts, language, icons, logo and more with a few lines
+
+</div>
+
+> **For a full breakdown of all features, check the "Full Feature List" section at the bottom.**
 
 
----
 
 
 ### Importing Textures
 
-![Import Settings](images/import_settings.png){ .img-box align=left}
+Importing is as simple as one click, or you can dive into extensive customization, as shown in the image below highlighting the many available options.
+
+![Example Import](images/import_example.gif){ .img-box align=left }
+![Import Settings](images/import_settings_expanded.png){ .img-box align=left }
 
 <div style="clear:both"></div>
+
+<figure markdown="span">
+  ![Image title](images/imported_material_example.png){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
 
 <figure markdown="span">
   ![Example Import With Extra Everything](images/imported_material_example.png){ .img-box .on-glb  data-title="Example of an import with various additional accessory nodes." data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments."}
@@ -54,7 +85,7 @@ Render either through the BatchGenie panel or via Asset Browser
 
 ## Documentation
 
-Extensive documentation is available [here](https://roberddd.github.io/BatchGenie).
+Extensive documentation is available [here](https://roberddd.github.io/BatchGenie){target="_blank"}.
 
 
 <div style="clear:both"></div>
