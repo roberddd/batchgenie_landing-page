@@ -62,7 +62,7 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 </div>
 
-<div class="grid cards grid_custom" markdown>
+<div class="grid cards grid_custom"  markdown>
 
 -   :material-tools:{ .lg .middle } __Batch Utilities__
 
@@ -70,13 +70,12 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
     Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
 
-
 </div>
 
 > For a full breakdown of all features, check the '**Full Feature List**' section at the bottom.
 
 
-## Importing Textures
+## :material-image-multiple: Importing Textures
 
 Importing is as simple as one click, or you can dive into extensive customization, as shown in the image below highlighting the many available options.
 
@@ -105,50 +104,203 @@ More import related settings can be found in the add-on preferences.
 </figure>
 
 
-
-[![Material Example](images/imported_material_example.png){ .img-box }](images/imported_material_example.png){ data-featherlight="image" }
-
-
 <div style="clear:both"></div>
 
 
 
-## Rendering Asset Previews
 
+## :material-camera: Rendering Asset Previews
 
 You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.
 
-When rendering via the Asset Browser, you can work with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.
+![Batch Render](images/render_asset_previews_objects.png){ .img-box align=left}
 
-![Batch Render](images/render_asset_previews_objects.png){ .img-box }
+:material-chevron-left: **Advanced filtering** to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
+
+<div style="clear:both"></div>
+
+:material-chevron-down: When rendering via the Asset Browser, you can work with **both internal and external Assets**, so you don't have to open each individual Asset Blend file separately.
 
 ![Asset Browser Render](images/render_asset_previews_render_from_asset_browser.gif){ .img-box }
 
-<figure markdown="span">
-  ![Asset Browser Render](images/render_asset_previews_render_from_asset_browser.gif){ .img-box }
-  <figcaption>Example of an import with various additional accessory nodes.</figcaption>
-</figure>
+#### Settings
+
+Easy controls for light and background settings to tailor the images to your liking.
 
 
-## Batch Utilities
 
-BatchGenie offers a range of utilities to efficiently manage materials and other Assets. All utilities generate detailed reports in the console, providing insights into the actions performed by each utility. You can view these reports by navigating to Window > Toggle System Console.
+![Scene Settings](images/render_asset_previews_scene_settings.png){ .img-box align=left }
+
+![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box align=left }
+
+<div style="clear:right"></div>
+
+:material-chevron-left: :material-chevron-up: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
+
+<div style="clear:both"></div>
+
+:material-chevron-down: Lighting and studio presets available, and you can easily add your own custom HDRIs to the list.
+
+![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box .margin-tight-vertical .margin-tight-horizontal }
+
+![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box  .margin-tight-vertical .margin-tight-horizontal }
+
+<div style="clear:both"></div>
+
+
+
+
+## :material-tools: Batch Utilities
+
+Utilities for efficiently managing materials and other assets. These tools work with both **local assets** in the current file **and external assets** through the Asset Browser, eliminating the need to open each individual Blend file separately. Built-in **parallel processing** when working with external assets, allowing multiple assets to be processed simultaneously in the background.
+
+
+### Change Node Attributes
+
+![Change Node Attributes](images/utility_change_attribute.gif){ .img-box-top align=left }
+
+Batch modify attributes across multiple materials. It’s useful for making consistent adjustments to properties like roughness, metallic, or any other material attribute.
+
+Target specific nodes or socket such as: Shader Nodes, Texture Nodes, Displacement Nodes, Normal Map Nodes, Bump Nodes, Seed Sockets and change any values.
+
+<div style="clear:both"></div>
+
+
+### Change Material Settings
+
+![Change Material Settings](images/change-material-settings.gif){ .img-box-top align=right }
+
+Batch modify material settings across materials.
+
+<div style="clear:both"></div>
+
+
+### Replace Shader Nodes
+
+![Replace Shader Nodes](images/utility_replace_shader_nodes.png){ .img-box align=left }
+
+Replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material.
+
+<div style="clear:both"></div>
+
+
+### Find Unconnected Nodes
+
+![Find Unconnected Nodes](images/utility_find_unconnected_nodes_example.png){ .img-box align=right }
+
+Locate materials with unconnected nodes in your file, such as Image Texture nodes.
+
+<div style="clear:both"></div>
+
+
+### Find Zero Strength Nodes
+
+![Find Zero Strength Nodes](images/utility_find_zero_strength_nodes_example.png){ .img-box align=left }
+
+
+Finds nodes with critical values set to zero, which may negatively affect the appearance of your materials. You can select specific node types to check: For Normal Map and Bump nodes, it checks if 'Strength' is zero; for Displacement nodes, it verifies if 'Scale' is zero. This helps ensure that your materials function as intended.
+
+<div style="clear:both"></div>
+
+
+### Color Space Validator
+
+![Color Space Validator](images/utility_color_space_validator_example.png){ .img-box align=right }
+
+Verifies that the image textures within materials in your file are using the correct color space settings, generates reports on its findings, and provides an option to **automatically** fix any issues.
+
+<div style="clear:both"></div>
+
+
+### Batch Rename
+
+![Batch Rename](images/utility_batch_rename.gif){ .img-box align=left }
+
+While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
+
+<div style="clear:both"></div>
+
+
+### Reload Images
+
+![Reload Images](images/utility_reload_images.png){ .img-box align=right }
+
+If you have edited any of your textures externally and the changes are not visible in Blender, use this utility to reload all images in your your file.
+
+<div style="clear:both"></div>
+
+
+### Asset Browser - Manage Asset Tags
+
+Add or remove tags from your Assets. Select any number of Assets of any type, choose the desired tags to add, and BatchGenie will assign them to the appropriate Assets. These can be either regular tags or **Smart Tags** that apply the property of your choice to the Asset.
+
+#### Add Tags
+
+![Add Tags - Default](images/utility_asset_browser_tag_default.gif){ .img-box .margin-tight-vertical align=left }
+![Add Tags - Object And Collection Dimensions](images/utility_asset_browser_tag_object_collection_dimensions.gif){ .img-box .margin-tight-vertical align=left }
+![Add Tags - Object Triangles](images/utility_asset_browser_tag_object_triangles.gif){ .img-box .margin-tight-vertical align=left }
+![Add Tags - Object vertices](images/utility_asset_browser_tag_object_vertices.gif){ .img-box .margin-tight-vertical align=left }
+![Add Tags - Texture Resolution](images/utility_asset_browser_tag_material_texture_resolution.png){ .img-box .margin-tight-vertical align=left }
+
+<div style="clear:both"></div>
+
+#### Combine / Split Tags
+
+![Split And Combine Tags](images/utility_asset_browser_tag_combine_split.gif){ .img-box .margin-tight-vertical align=left }
+
+Combine or split existing tags on Assets. Combine single-word tags into a single line, separated by commas (e.g., "tag1, tag2, tag3"). The split function reverses this, separating combined tags.
+
+<div style="clear:both"></div>
+
+#### Remove Tags
+
+![Remove Tags](images/utility_asset_browser_remove_tags.gif){ .img-box-top .margin-tight-vertical align=left }
+
+Helps you remove existing tags from your assets. You can either select from a dropdown of existing tags, perform a keyword search, or target BatchGenie-applied Smart Tags for removal.
+
+<div style="clear:both"></div>
+
+
+### Asset Browser - Manage Metadata
+
+![Manage Metadata](images/utility_asset_browser_metadata.png){ .img-box .margin-tight-vertical align=left }
+
+Add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously.
+
+<div style="clear:both"></div>
+
+
+### Asset Browser - Move Assets
+
+Move Assets to different Asset Catalogs to help you organize your Asset Library. Remember, BatchGenie handles **both internal and external assets**, so there's no need to open each individual Asset Blend file when moving assets around.
+
+![Move Assets Utility](images/utility_move_assets.png){ .img-box align=left }
+
+![Move Assets Catalog Example](images/utility_move_assets_catalog_example.png){ .img-box align=left }
+
+<div style="clear:both"></div>
 
 
 <div style="clear:both"></div>
+
+
+### Shader Editor Utilities
+
+There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments.
 
 
 # Documentation
 
-Extensive documentation is available [here](https://roberddd.github.io/BatchGenie){target="_blank"}.
+Extensive documentation is available [here](https://roberddd.github.io/BatchGenie){target="_blank"}, along with a detailed video instruction to guide you through the features.
 
 
-<div style="clear:both"></div>
+
 
 # Full Feature List
 
 - Easy one-click interface for instant use, while offering advanced customization options.
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
+- Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
 - **Texture Import**:
     - Blazingly fast imports.
