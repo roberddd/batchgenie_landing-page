@@ -52,7 +52,6 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
     BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
 
-    [:material-chevron-right: Read more](#importing-textures)
 
 -   :material-camera:{ .lg .middle } __Batch Render Asset Previews__
 
@@ -60,7 +59,6 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
     Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
 
-    [:material-chevron-right: Read more](#rendering-asset-previews)
 
 </div>
 
@@ -72,11 +70,10 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
     Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
 
-    [:material-chevron-right: Read more](#importing-textures)
 
 </div>
 
-> **For a full breakdown of all features, check the '[Full Feature List](#full-feature-list)' section at the bottom.**
+> For a full breakdown of all features, check the '**Full Feature List**' section at the bottom.
 
 
 ## Importing Textures
@@ -109,7 +106,7 @@ More import related settings can be found in the add-on preferences.
 
 
 
-[![Material Example](images/imported_material_example.png){ .img-box }](images/imported_material_example.png){data-featherlight="image"}
+[![Material Example](images/imported_material_example.png){ .img-box }](images/imported_material_example.png){ data-featherlight="image" }
 
 
 <div style="clear:both"></div>
@@ -158,7 +155,7 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
     - Supports both Metallic/Roughness and Specular/Glossiness workflow.
     - Supports for 16+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Sheen Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
         - Packed: ARM/ORM/RMA textures that combine AO, Roughness, and Metallic maps.
-        - Custom: Import any map and connect it to your chosen input via a dropdown menu.
+        - Custom: Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
     - Automatically sets up all necessary nodes, including color space adjustments and other configurations for a smooth workflow without manual intervention. This includes detecting normal map format and adding conversion nodes if needed, as well as auto-detecting the alpha channel from the Albedo texture to use its alpha channel if available.
     - Supports all combinations of Normal, Bump & Displacement maps.
     - Flexibly adjust the strength of Normal, Bump, Displacement, and Ambient Occlusion maps during import with the added convenience of bulk updates afterwards if needed.
