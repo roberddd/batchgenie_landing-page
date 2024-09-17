@@ -1,11 +1,13 @@
-/* /* .md-header-nav, .md-sidebar, .md-footer {
-  display: none;
-} */
+:root {
+  --md-primary-fg-color:#ec6628;
+  --md-accent-fg-color: #EE0F0F;
+}
+
 .md-main {
   margin: 0 auto;
   max-width: 100%;
-} */
 
+} */
 
 
 
@@ -24,11 +26,90 @@
     margin-right: auto;  */
   }
 }
-
-
-.md-typeset h1 {
-  margin-bottom: calc(1em - 35px);
+/* Decrease Overall Margin */
+.md-content__inner {
+  margin: 0 .3rem 1.2rem;
 }
+
+
+
+
+/* ######## < CUSTOM GRID > ######## */
+
+/* Custom Grid - General styling */
+/* .md-typeset .grid_custom>ul>li {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: white;
+  display: block;
+} */
+
+/* Custom Grid - Unique backgrounds for each card */
+/* .md-typeset .grid_custom>ul>li:nth-child(1) {
+  background-color: #F4A261;
+}
+
+.md-typeset .grid_custom>ul>li:nth-child(2) {
+  background-color: #2A9D8F;
+}
+
+.md-typeset .grid_custom>ul>li:nth-child(3) {
+  background-color: #E87EA1;
+} */
+
+
+/* .md-typeset .grid_custom .middle {
+  background-color: transparent !important;
+} */
+
+/* links inside */
+/* .md-typeset .grid_custom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.md-typeset .grid_custom a:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+.md-typeset .grid_custom a:active {
+  color: #cccccc;
+} */
+
+
+.md-typeset .grid_custom>ul>li:hover {
+  border: .05rem solid rgb(155, 155, 155) !important;
+}
+
+.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
+  background-color: #f1f1f1;
+}
+
+.md-typeset .grid_custom .material-icons,
+.md-typeset .grid_custom .lg {
+    font-size: 1.15rem;
+    width: auto;
+    height: auto;
+}
+/* ######## </ CUSTOM GRID > ######## */
+
+
+/* ######## </ HEADERS > ######## */
+.md-typeset h1 {
+  margin-top:.75em;
+  margin-bottom: calc(1em - 35px);
+  font-size: 3em;
+  font-weight: 700;
+}
+.md-typeset h2 {
+  margin-bottom: calc(1em - 45px);
+  font-size: 2em;
+  font-weight: 350;
+}
+
+/* ######## </ HEADERS > ######## */
+
 
 .md-typeset .md-button--stretch {
   width: 99%;
@@ -37,6 +118,10 @@
 .img-box{
   box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
+}
+.margin-tight{
+  margin-left: .075rem !important;
+  margin-right: .075rem !important;
 }
 
 
@@ -58,4 +143,3 @@
   -webkit-mask-image: var(--md-admonition-icon--info2);
           mask-image: var(--md-admonition-icon--info2);
 }
-
