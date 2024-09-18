@@ -46,25 +46,24 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 <div class="grid cards grid_custom" markdown>
 
--   :material-image-multiple:{ .lg .middle } __Batch Import PBR Textures__
+-   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import PBR Textures__
 
     ---
 
     BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
 
 
--   :material-camera:{ .lg .middle } __Batch Render Asset Previews__
+-   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Asset Previews__
 
     ---
 
     Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
 
-
 </div>
 
 <div class="grid cards grid_custom"  markdown>
 
--   :material-tools:{ .lg .middle } __Batch Utilities__
+-   :material-tools:{ .lg .middle style="color:var(--main-accent-color-blue)" } __Batch Utilities__
 
     ---
 
@@ -75,7 +74,13 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 > For a full breakdown of all features, check the '**Full Feature List**' section at the bottom.
 
 
-## :material-image-multiple: Importing Textures
+
+
+
+
+<div class="section-box accent-red" markdown>
+
+## :material-image-multiple:{style="color:var(--main-accent-color-red)"} Importing Textures
 
 Importing is as simple as one click, or you can dive into extensive customization, as shown in the image below highlighting the many available options.
 
@@ -106,10 +111,14 @@ More import related settings can be found in the add-on preferences.
 
 <div style="clear:both"></div>
 
+</div> <!-- Textures section end -->
 
 
 
-## :material-camera: Rendering Asset Previews
+
+<div class="section-box accent-green" markdown>
+
+## :material-camera:{style="color:var(--main-accent-color-green)"}  Rendering Asset Previews
 
 You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.
 
@@ -147,10 +156,13 @@ Easy controls for light and background settings to tailor the images to your lik
 
 <div style="clear:both"></div>
 
+</div> <!-- Render section end -->
 
 
 
-## :material-tools: Batch Utilities
+<div class="section-box accent-blue" markdown>
+
+## :material-tools:{style="color:var(--main-accent-color-blue)"}  Batch Utilities
 
 Utilities for efficiently managing materials and other assets. These tools work with both **local assets** in the current file **and external assets** through the Asset Browser, eliminating the need to open each individual Blend file separately. Built-in **parallel processing** when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
@@ -170,7 +182,7 @@ Target specific nodes or socket such as: Shader Nodes, Texture Nodes, Displaceme
 
 ![Change Material Settings](images/change-material-settings.gif){ .img-box-top align=right }
 
-Batch modify material settings across materials.
+Batch modify material settings across materials such as: Displacement Type, Eevee Backface Culling, Eevee Transparent Shadows, Eevee Render Method, Eevee Raytrace Transmission, Eevee Thickness and Viewport Display Color(Set the 'Viewport Display Color' of the material to match the 'Base Color' attribute of the main shader.)
 
 <div style="clear:both"></div>
 
@@ -265,7 +277,7 @@ Helps you remove existing tags from your assets. You can either select from a dr
 
 ![Manage Metadata](images/utility_asset_browser_metadata.png){ .img-box .margin-tight-vertical align=left }
 
-Add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously.
+Add metadata to your Assets. You can select and edit one or multiple attributes simultaneously.
 
 <div style="clear:both"></div>
 
@@ -287,6 +299,10 @@ Move Assets to different Asset Catalogs to help you organize your Asset Library.
 ### Shader Editor Utilities
 
 There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments.
+
+</div> <!-- Utilities section end -->
+
+
 
 
 # Documentation
