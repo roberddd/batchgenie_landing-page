@@ -82,7 +82,7 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 ## :material-image-multiple:{style="color:var(--main-accent-color-red)"} Importing Textures
 
-Importing is as simple as one click, or you can dive into extensive customization, as shown in the image below highlighting the many available options.
+Importing is as simple as one click, or you can dive into extensive customization if needed.
 
 ![Example Import](images/import_example.gif){ .img-box  align=left }
 
@@ -92,15 +92,39 @@ asd
 </div> -->
 
 ![Import Settings](images/import_settings_expanded.png){ .img-box align=right }
+
+#### Fast Imports
+
+With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3 seconds.
+
 <div style="clear:left"></div>
 
-Easily adjust
+#### Advanced Options
+
+:material-chevron-right: The image to the right highlights many of the available options, while the paragraphs below provide brief explanations of some of the more advanced or less obvious functions.
+
+---
+
+##### - Replace Principled BSDF
+
+Use a custom Node-Group instead of a Principled BSDF for the imported materials. Easily pick from a dropdown that shows all Node-Groups in the current blend file. This enables precise material customization during the import process.
+
+---
+
+##### - Custom Attributes
+
+Set one or multiple socket attributes such as color or values during import.
+
+---
+
+##### - Custom Texture
+
+Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
+
+---
+
 
 More import related settings can be found in the add-on preferences.
-
-<!-- ??? abstract "Customization"
-    ![Import Settings](images/import_settings_expanded.png){ .img-box align=left } -->
-
 <div style="clear:both"></div>
 
 <figure markdown="span">
@@ -120,9 +144,9 @@ More import related settings can be found in the add-on preferences.
 
 ## :material-camera:{style="color:var(--main-accent-color-green)"}  Rendering Asset Previews
 
-You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.
+You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets **from the Asset Browser** for which you wish to render previews for. BatchGenie supports rendering previews for **materials**, **collections**, and **objects**, including VDB volumes.
 
-![Batch Render](images/render_asset_previews_objects.png){ .img-box align=left}
+![Batch Render](images/render_asset_previews.gif){ .img-box align=left}
 
 :material-chevron-left: **Advanced filtering** to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
 
@@ -144,11 +168,11 @@ Easy controls for light and background settings to tailor the images to your lik
 
 <div style="clear:right"></div>
 
-:material-chevron-left: :material-chevron-up: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
+:material-chevron-left: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
 
 <div style="clear:both"></div>
 
-:material-chevron-down: Lighting and studio presets available, and you can easily add your own custom HDRIs to the list.
+:material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
 
 ![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box .margin-tight-vertical .margin-tight-horizontal }
 
@@ -177,6 +201,7 @@ Target specific nodes or socket such as: Shader Nodes, Texture Nodes, Displaceme
 
 <div style="clear:both"></div>
 
+---
 
 ### Change Material Settings
 
@@ -186,6 +211,7 @@ Batch modify material settings across materials such as: Displacement Type, Eeve
 
 <div style="clear:both"></div>
 
+---
 
 ### Replace Shader Nodes
 
@@ -195,6 +221,7 @@ Replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the m
 
 <div style="clear:both"></div>
 
+---
 
 ### Find Unconnected Nodes
 
@@ -204,6 +231,7 @@ Locate materials with unconnected nodes in your file, such as Image Texture node
 
 <div style="clear:both"></div>
 
+---
 
 ### Find Zero Strength Nodes
 
@@ -214,6 +242,7 @@ Finds nodes with critical values set to zero, which may negatively affect the ap
 
 <div style="clear:both"></div>
 
+---
 
 ### Color Space Validator
 
@@ -223,15 +252,17 @@ Verifies that the image textures within materials in your file are using the cor
 
 <div style="clear:both"></div>
 
+---
 
 ### Batch Rename
 
 ![Batch Rename](images/utility_batch_rename.gif){ .img-box align=left }
 
-While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
+This utility includes options for aligning mesh names with object names and syncing image names with file names, making it particularly useful for imported assets with inconsistent naming conventions.
 
 <div style="clear:both"></div>
 
+---
 
 ### Reload Images
 
@@ -241,6 +272,7 @@ If you have edited any of your textures externally and the changes are not visib
 
 <div style="clear:both"></div>
 
+---
 
 ### Asset Browser - Manage Asset Tags
 
@@ -272,6 +304,7 @@ Helps you remove existing tags from your assets. You can either select from a dr
 
 <div style="clear:both"></div>
 
+---
 
 ### Asset Browser - Manage Metadata
 
@@ -281,6 +314,7 @@ Add metadata to your Assets. You can select and edit one or multiple attributes 
 
 <div style="clear:both"></div>
 
+---
 
 ### Asset Browser - Move Assets
 
@@ -292,9 +326,7 @@ Move Assets to different Asset Catalogs to help you organize your Asset Library.
 
 <div style="clear:both"></div>
 
-
-<div style="clear:both"></div>
-
+---
 
 ### Shader Editor Utilities
 
@@ -326,7 +358,7 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
         - Custom: Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
     - Automatically sets up all necessary nodes, including color space adjustments and other configurations for a smooth workflow without manual intervention. This includes detecting normal map format and adding conversion nodes if needed, as well as auto-detecting the alpha channel from the Albedo texture to use its alpha channel if available.
     - Supports all combinations of Normal, Bump & Displacement maps.
-    - Flexibly adjust the strength of Normal, Bump, Displacement, and Ambient Occlusion maps during import with the added convenience of bulk updates afterwards if needed.
+    - Flexibly adjust the strength of Normal, Bump, Displacement, Ambient Occlusion and Cavity maps during import with the added convenience of bulk updates afterwards if needed.
     - Logic adept at deciphering complex texture naming conventions and avoiding duplicates of similar maps such as Roughness & Gloss.
     - Ability to designate a custom node-group to substitute the Principled BSDF shader in imported materials, enabling precise material customization during the import process.
     - Custom Input Socket Attributes: This feature enables you to define attributes for any input socket on the main shader of imported textures. You can assign specific colors or values, or utilize randomly generated values as required, including both whole numbers and decimals. This can be particularly useful for populating 'Seed' sockets.
@@ -334,10 +366,10 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
 
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
-    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes
+    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
     - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
     - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-    - Easy controls for light and background settings to tailor the images to your liking.
+    - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
     - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
 - **Utilities**:
