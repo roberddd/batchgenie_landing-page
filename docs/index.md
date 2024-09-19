@@ -82,7 +82,7 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 ## :material-image-multiple:{style="color:var(--main-accent-color-red)"} Importing Textures
 
-Importing is as simple as one click, or you can dive into extensive customization if needed.
+Importing is as simple as one click, or you can dive into extensive customization if needed. It supports over 16 texture types, with fully automated setup for nodes, color space adjustments, and other configurations.
 
 ![Example Import](images/import_example.gif){ .img-box  align=left }
 
