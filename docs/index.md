@@ -174,9 +174,9 @@ Easy controls for light and background settings to tailor the images to your lik
 
 :material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
 
-![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box .margin-tight-vertical .margin-tight-horizontal }
+![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-bottom:-.75em" }
 
-![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box  .margin-tight-vertical .margin-tight-horizontal }
+![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
 
 <div style="clear:both"></div>
 
@@ -300,7 +300,7 @@ Combine or split existing tags on Assets. Combine single-word tags into a single
 
 ![Remove Tags](images/utility_asset_browser_remove_tags.gif){ .img-box-top .margin-tight-vertical align=left }
 
-Helps you remove existing tags from your assets. You can either select from a dropdown of existing tags, perform a keyword search, or target BatchGenie-applied Smart Tags for removal.
+Remove existing tags from your assets. You can either select from a dropdown of existing tags, perform a keyword search, or target BatchGenie-applied Smart Tags for removal.
 
 <div style="clear:both"></div>
 

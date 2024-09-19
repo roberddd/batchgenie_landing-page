@@ -28,7 +28,6 @@
   /* Target images aligned right */
   .img-box[align="right"] { /* Solves issue on mobile for images that are floating right... so float it right again.. two rights make wrong */
      float: right;
-
   }
 }
 /* Overall Margin */
@@ -37,6 +36,8 @@
 }
 .md-typeset hr {
   margin-top: 0;
+  margin-bottom: .9em;
+
 }
 /* ######## < CUSTOM GRID > ######## */
 
