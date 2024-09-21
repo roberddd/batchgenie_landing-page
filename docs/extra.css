@@ -26,7 +26,7 @@
     width: 100%;
   }
   /* Target images aligned right */
-  .img-box[align="right"] { /* Solves issue on mobile for images that are floating right... so float it right again.. two rights make wrong */
+  .img-box[align="right"] { /* Solves issue on mobile for images that are floating right... so float it right again...*/
      float: right;
   }
 }

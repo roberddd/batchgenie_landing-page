@@ -128,7 +128,7 @@ More import related settings can be found in the add-on preferences.
 <div style="clear:both"></div>
 
 <figure markdown="span">
-  ![Material Example](images/imported_material_example.png){ .img-box }
+  ![Material Example](images/imported_material_example.png){ .img-box style="margin-top:-1em" }
   <figcaption>Example of an import with various additional accessory nodes.</figcaption>
 </figure>
 
