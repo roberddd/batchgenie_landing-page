@@ -71,7 +71,7 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 </div>
 
-> For a full breakdown of all features, check the '**Full Feature List**' section at the bottom.
+> For a full breakdown of all features, check the '**Feature Summary**' section at the bottom.
 
 
 
@@ -124,7 +124,8 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
 ---
 
 
-More import related settings can be found in the add-on preferences.
+*More import related settings can be found in the add-on preferences.*
+
 <div style="clear:both"></div>
 
 <figure markdown="span">
@@ -195,7 +196,7 @@ Utilities for efficiently managing materials and other assets. These tools work 
 
 ![Change Node Attributes](images/utility_change_attribute.gif){ .img-box-top align=left }
 
-Batch modify attributes across multiple materials. It’s useful for making consistent adjustments to properties like roughness, metallic, or any other material attribute.
+Batch modify attributes across multiple materials. It's useful for making consistent adjustments to properties like roughness, metallic, or any other material attribute.
 
 Target specific nodes or socket such as: Shader Nodes, Texture Nodes, Displacement Nodes, Normal Map Nodes, Bump Nodes, Seed Sockets and change any values.
 
@@ -205,7 +206,7 @@ Target specific nodes or socket such as: Shader Nodes, Texture Nodes, Displaceme
 
 ### Change Material Settings
 
-![Change Material Settings](images/change-material-settings.gif){ .img-box-top align=right }
+![Change Material Settings](images/utility_change-material-settings.gif){ .img-box-top align=right }
 
 Batch modify material settings across materials such as: Displacement Type, Eevee Backface Culling, Eevee Transparent Shadows, Eevee Render Method, Eevee Raytrace Transmission, Eevee Thickness and Viewport Display Color(Set the 'Viewport Display Color' of the material to match the 'Base Color' attribute of the main shader.)
 
@@ -218,6 +219,9 @@ Batch modify material settings across materials such as: Displacement Type, Eeve
 ![Replace Shader Nodes](images/utility_replace_shader_nodes.png){ .img-box align=left }
 
 Replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material.
+
+:material-chevron-left: **Filtering:** Many utilities offer filtering options to help target the correct Assets.
+
 
 <div style="clear:both"></div>
 
@@ -285,6 +289,7 @@ Add or remove tags from your Assets. Select any number of Assets of any type, ch
 ![Add Tags - Object Triangles](images/utility_asset_browser_tag_object_triangles.gif){ .img-box .margin-tight-vertical align=left }
 ![Add Tags - Object vertices](images/utility_asset_browser_tag_object_vertices.gif){ .img-box .margin-tight-vertical align=left }
 ![Add Tags - Texture Resolution](images/utility_asset_browser_tag_material_texture_resolution.png){ .img-box .margin-tight-vertical align=left }
+![Add Tags - Texture Type](images/utility_asset_browser_tag_material_type.gif){ .img-box .margin-tight-vertical align=left }
 
 <div style="clear:both"></div>
 
@@ -328,6 +333,19 @@ Move Assets to different Asset Catalogs to help you organize your Asset Library.
 
 ---
 
+### Asset Browser - Load previews from disk
+
+![Load previews from disk Utility](images/utilities_asset_browser_misc.png){ .img-box align=left }
+
+Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the Assets.
+
+
+
+
+<div style="clear:both"></div>
+
+---
+
 ### Shader Editor Utilities
 
 There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments.
@@ -344,7 +362,7 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
 
 
 
-# Full Feature List
+# Feature Summary
 
 - Easy one-click interface for instant use, while offering advanced customization options.
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
@@ -364,6 +382,9 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
     - Custom Input Socket Attributes: This feature enables you to define attributes for any input socket on the main shader of imported textures. You can assign specific colors or values, or utilize randomly generated values as required, including both whole numbers and decimals. This can be particularly useful for populating 'Seed' sockets.
     - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
 
+- **Exporting**:
+    - Batch exporting of objects to blend files.
+
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
     - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
@@ -373,6 +394,7 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
     - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
 - **Utilities**:
+    - Utilities are available for working with your current blend file and are integrated into the Asset Browser for quick access.
     - Tools for bulk updating material settings such as Displacement and eevee specific settings.
     - Node Attribute Changer: Target various nodes or custom node-groups within materials to change socket values, set specific colors, or use random values for seed sockets.
     - Replace Node Utility: Replace existing 'Shader Editor' nodes with custom Node-Groups.
@@ -383,4 +405,5 @@ Extensive documentation is available [here](https://roberddd.github.io/BatchGeni
     - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed Asset information.
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
     - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
+    - Load previews from disk:  Directly load custom asset preview images from a specified directory.
     - Plus a few other small utilities!
