@@ -9,59 +9,31 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 # Key Features
 
-<!-- - **Batch Import PBR Textures**: BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
-- **Batch Render Asset Previews**: Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
-- **Batch Utilities**: Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
-
-    <br>
-    **For a full breakdown of all features, check the "Full Feature List" section at the bottom.** -->
-
-<!-- <div class="grid cards" markdown>
-
--   :material-image-multiple:{ .lg .middle } __Batch Import PBR Textures__
-
-    ---
-
-    BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
-
-    [:material-arrow-right: Read more](#importing-textures)
-
--   :material-camera:{ .lg .middle } __Batch Render Asset Previews__
-
-    ---
-
-    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
-
-    [:material-arrow-right: Read more](#importing-textures)
-
--   :material-tools:{ .lg .middle } __Batch Utilities__
-
-    ---
-
-    Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
-
-    [:material-arrow-right: Read more](#importing-textures)
-
-</div> -->
-
 <div class="grid cards grid_custom" markdown>
 
--   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import PBR Textures__
+-   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
 
     ---
 
-    BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
+    Streamlined PBR texture importing with a single click, offering robust customization options for bulk imports to save time and effort while tailoring the process to your preferences.
 
 
--   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Asset Previews__
+-   :material-export-variant:{ .lg .middle style="color:var(--main-accent-color-orange)" } __Batch Export__
 
     ---
 
-    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
+    Batch export objects, collections, and materials directly from the Asset Browser, streamlining your workflow and ensuring your assets are ready for use in any project.
 
 </div>
 
 <div class="grid cards grid_custom"  markdown>
+
+-   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Assets__
+
+    ---
+
+    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
+
 
 -   :material-tools:{ .lg .middle style="color:var(--main-accent-color-blue)" } __Batch Utilities__
 
@@ -76,8 +48,6 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 
 
-
-
 <div class="section-box accent-red" markdown>
 
 ## :material-image-multiple:{style="color:var(--main-accent-color-red)"} Importing Textures
@@ -85,11 +55,6 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 Importing is as simple as one click, or you can dive into extensive customization if needed. It supports over 16 texture types, with fully automated setup for nodes, color space adjustments, and other configurations.
 
 ![Example Import](images/import_example.gif){ .img-box  align=left }
-
-
-<!-- <div style="float:right">
-asd
-</div> -->
 
 ![Import Settings](images/import_settings_expanded.png){ .img-box align=right }
 
@@ -123,7 +88,6 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
 
 ---
 
-
 *More import related settings can be found in the add-on preferences.*
 
 <div style="clear:both"></div>
@@ -133,10 +97,30 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
   <figcaption>Example of an import with various additional accessory nodes.</figcaption>
 </figure>
 
-
 <div style="clear:both"></div>
 
 </div> <!-- Textures section end -->
+
+
+
+
+<div class="section-box accent-orange" markdown>
+
+## :material-export-variant:{style="color:var(--main-accent-color-orange)"} Exporting
+
+Batch export **objects**, **collections**, and **materials**. Work either directly from the 3D viewport or via the **Asset Browser**, it's as easy as point and click.
+
+![Material Example](images/export_panel.gif){ .img-box  }
+![Material Example](images/export_settings.png){ .img-box  }
+
+
+![Material Example](images/export_folder_structure_example.png){ .img-box align=left }
+
+:material-chevron-left: You can either export your items into one folder or keep the Outliner Hierarchy if needed.
+
+<div style="clear:both"></div>
+
+</div> <!-- Export section end -->
 
 
 
@@ -162,10 +146,9 @@ You can either utilize Batch Rendering through the BatchGenie panel, or selectiv
 Easy controls for light and background settings to tailor the images to your liking.
 
 
+![Scene Settings](images/render_asset_previews_scene_settings[narrow].png){ .img-box align=left }
 
-![Scene Settings](images/render_asset_previews_scene_settings.png){ .img-box align=left }
-
-![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box align=left }
+![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box }
 
 <div style="clear:right"></div>
 
@@ -175,13 +158,14 @@ Easy controls for light and background settings to tailor the images to your lik
 
 :material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
 
-![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-bottom:-.75em" }
+![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.75em; margin-bottom:-.75em" }
 
 ![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
 
 <div style="clear:both"></div>
 
 </div> <!-- Render section end -->
+
 
 
 
@@ -333,14 +317,22 @@ Move Assets to different Asset Catalogs to help you organize your Asset Library.
 
 ---
 
-### Asset Browser - Load previews from disk
+### Asset Browser - Misc Utilities
 
 ![Load previews from disk Utility](images/utilities_asset_browser_misc.png){ .img-box align=left }
 
-Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the Assets.
 
+#### Export
 
+Export selected assets, see the 'Export' section for more details.
 
+#### Load previews from disk
+
+Batch load custom Asset Preview images from a specified directory.
+
+#### Pack Textures
+
+This feature packs all associated textures into their respective blend files, ensuring that your assets retain their appearance without the need for external texture files.
 
 <div style="clear:both"></div>
 
@@ -360,6 +352,7 @@ There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Stren
 Extensive documentation is available [here](https://roberddd.github.io/BatchGenie){target="_blank"}, along with a detailed video instruction to guide you through the features.
 
 For details about the current version and updates, check the [Changelog](https://batchgenie.roberd.net/changelog/){target="_blank"}.
+
 
 
 
@@ -384,7 +377,7 @@ For details about the current version and updates, check the [Changelog](https:/
     - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
 
 - **Exporting**:
-    - Batch exporting of objects, collections & materials to blend files.
+    - Batch export objects, collections, and materials to blend files with ease. This feature is directly integrated into the Asset Browser for seamless access and functionality
 
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
@@ -407,4 +400,5 @@ For details about the current version and updates, check the [Changelog](https:/
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
     - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
     - Load previews from disk:  Directly load custom asset preview images from a specified directory.
+    - Pack Textures: Easily pack textures for assets in the Asset Browser with a single click.
     - Plus a few other small utilities!

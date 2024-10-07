@@ -7,6 +7,7 @@
   --main-accent-color-red: #E0425D;
   --main-accent-color-green: #15ac59;
   --main-accent-color-blue: #4952d3;
+  --main-accent-color-orange: #ffa500;
   --main-box-bg: #f1f1f1;
   --main-box-border-color: #e0e0e0;
 }
@@ -120,6 +121,9 @@
 /* Modifiers for different accent colors */
 .section-box.accent-red::before {
   background-color: var(--main-accent-color-red);
+}
+.section-box.accent-orange::before {
+  background-color: var(--main-accent-color-orange);
 }
 .section-box.accent-green::before {
   background-color: var(--main-accent-color-green);
