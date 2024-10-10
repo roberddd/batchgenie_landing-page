@@ -11,7 +11,7 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 <div class="grid cards grid_custom" markdown>
 
--   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
+-   :material-import:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
 
     ---
 
@@ -50,17 +50,23 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 <div class="section-box accent-red" markdown>
 
-## :material-image-multiple:{style="color:var(--main-accent-color-red)"} Importing Textures
+## :material-import:{style="color:var(--main-accent-color-red); font-size: 1.8rem;"} Importing
 
-Importing is as simple as one click, or you can dive into extensive customization if needed. It supports over 16 texture types, with fully automated setup for nodes, color space adjustments, and other configurations.
+Importing is as simple as one click, with extensive customization available. Choose between **PBR Textures** and **Blend Files**: import texture sets from a folder as ready-to-use materials or batch import objects, collections, and materials from multiple blend files.
 
-![Example Import](images/import_example.gif){ .img-box  align=left }
+### :material-image-multiple:{style="color:var(--main-accent-color-red); font-size: 1.1rem;"} Importing PBR Textures
 
-![Import Settings](images/import_settings_expanded.png){ .img-box align=right }
+Supports for over 16 texture types, with fully automated setup for nodes, color space adjustments, and other configurations.
+
+![Example Texture Import](images/import_example.gif){ .img-box  align=left }
 
 #### Fast Imports
 
 With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3 seconds.
+
+![Texture Import Settings](images/import_settings_expanded.png){ .img-box align=right width=40% }
+
+
 
 <div style="clear:left"></div>
 
@@ -70,19 +76,19 @@ With default settings, importing a folder containing 183 different 4K and 8K tex
 
 ---
 
-##### - Replace Principled BSDF
+##### - Replace Principled BSDF { style="margin-bottom:-0.75em;" }
 
 Use a custom Node-Group instead of a Principled BSDF for the imported materials. Easily pick from a dropdown that shows all Node-Groups in the current blend file. This enables precise material customization during the import process.
 
 ---
 
-##### - Custom Attributes
+##### - Custom Attributes { style="margin-bottom:-0.75em;" }
 
 Set one or multiple socket attributes such as color or values during import.
 
 ---
 
-##### - Custom Texture
+##### - Custom Texture { style="margin-bottom:-0.75em;" }
 
 Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
 
@@ -99,14 +105,25 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
 
 <div style="clear:both"></div>
 
-</div> <!-- Textures section end -->
+
+### :material-blender-software:{style="color:var(--main-accent-color-red); font-size: 1.1rem;"} Importing Blend Files
+
+![Example Blend Import](images/import_blend-example.gif){ .img-box  align=right }
+
+Import objects, collections, and materials from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.
+
+
+
+<div style="clear:both"></div>
+
+</div> <!-- IMPORT section end -->
 
 
 
 
 <div class="section-box accent-orange" markdown>
 
-## :material-export-variant:{style="color:var(--main-accent-color-orange)"} Exporting
+## :material-export-variant:{style="color:var(--main-accent-color-orange); font-size: 1.8rem;"} Exporting
 
 Batch export **objects**, **collections**, and **materials**. Work either directly from the 3D viewport or via the **Asset Browser**, it's as easy as point and click.
 
@@ -127,7 +144,7 @@ Batch export **objects**, **collections**, and **materials**. Work either direct
 
 <div class="section-box accent-green" markdown>
 
-## :material-camera:{style="color:var(--main-accent-color-green)"}  Rendering Asset Previews
+## :material-camera:{style="color:var(--main-accent-color-green); font-size: 1.8rem;"}  Rendering Asset Previews
 
 You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets **from the Asset Browser** for which you wish to render previews for. BatchGenie supports rendering previews for **materials**, **collections**, and **objects**, including VDB volumes.
 
@@ -158,7 +175,7 @@ Easy controls for light and background settings to tailor the images to your lik
 
 :material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
 
-![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.75em; margin-bottom:-.75em" }
+![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.75em; margin-bottom:-.95em" }
 
 ![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
 
@@ -171,7 +188,7 @@ Easy controls for light and background settings to tailor the images to your lik
 
 <div class="section-box accent-blue" markdown>
 
-## :material-tools:{style="color:var(--main-accent-color-blue)"}  Batch Utilities
+## :material-tools:{style="color:var(--main-accent-color-blue); font-size: 1.8rem;"}  Batch Utilities
 
 Utilities for efficiently managing materials and other assets. These tools work with both **local assets** in the current file **and external assets** through the Asset Browser, eliminating the need to open each individual Blend file separately. Built-in **parallel processing** when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
