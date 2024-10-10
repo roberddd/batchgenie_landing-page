@@ -110,7 +110,7 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
 
 ![Example Blend Import](images/import_blend-example.gif){ .img-box  align=right }
 
-Import objects, collections, and materials from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.
+Import **objects**, **collections**, and **materials** from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.
 
 
 
