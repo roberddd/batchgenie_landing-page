@@ -11,28 +11,28 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 
 <div class="grid cards grid_custom" markdown>
 
+-   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Assets__
+
+    ---
+
+    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
+
+
 -   :material-import:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
 
     ---
 
     Streamlined asset importing with a single click, including PBR textures and more, offering robust customization options for bulk imports to save time and effort while tailoring the process to your preferences.
 
+</div>
+
+<div class="grid cards grid_custom"  markdown>
 
 -   :material-export-variant:{ .lg .middle style="color:var(--main-accent-color-orange)" } __Batch Export__
 
     ---
 
     Batch export objects, collections, and materials directly from the Asset Browser, streamlining your workflow and ensuring your assets are ready for use in any project.
-
-</div>
-
-<div class="grid cards grid_custom"  markdown>
-
--   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Assets__
-
-    ---
-
-    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
 
 
 -   :material-tools:{ .lg .middle style="color:var(--main-accent-color-blue)" } __Batch Utilities__
@@ -44,6 +44,50 @@ Welcome to **BatchGenie**, an add-on designed to simplify and automate common As
 </div>
 
 > For a full breakdown of all features, check the '**Feature Summary**' section at the bottom.
+
+
+
+
+<div class="section-box accent-green" markdown>
+
+## :material-camera:{style="color:var(--main-accent-color-green); font-size: 1.8rem;"}  Rendering Asset Previews
+
+You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets **from the Asset Browser** for which you wish to render previews for. BatchGenie supports rendering previews for **materials**, **collections**, and **objects**, including VDB volumes.
+
+![Batch Render](images/render_asset_previews.gif){ .img-box align=left}
+
+:material-chevron-left: **Advanced filtering** to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
+
+<div style="clear:both"></div>
+
+:material-chevron-down: When rendering via the Asset Browser, you can work with **both internal and external Assets**, so you don't have to open each individual Asset Blend file separately.
+
+![Asset Browser Render](images/render_asset_previews_render_from_asset_browser.gif){ .img-box }
+
+#### Settings
+
+Easy controls for light and background settings to tailor the images to your liking.
+
+
+![Scene Settings](images/render_asset_previews_scene_settings[narrow].png){ .img-box align=left }
+
+![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box }
+
+<div style="clear:right"></div>
+
+:material-chevron-left: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
+
+<div style="clear:both"></div>
+
+:material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
+
+![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.75em; margin-bottom:-.95em" }
+
+![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
+
+<div style="clear:both"></div>
+
+</div> <!-- Render section end -->
 
 
 
@@ -65,8 +109,6 @@ Supports for over 16 texture types, with fully automated setup for nodes, color 
 With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3 seconds.
 
 ![Texture Import Settings](images/import_settings_expanded.png){ .img-box align=right width=40% }
-
-
 
 <div style="clear:left"></div>
 
@@ -142,56 +184,11 @@ Batch export **objects**, **collections**, and **materials**. Work either direct
 
 
 
-<div class="section-box accent-green" markdown>
-
-## :material-camera:{style="color:var(--main-accent-color-green); font-size: 1.8rem;"}  Rendering Asset Previews
-
-You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets **from the Asset Browser** for which you wish to render previews for. BatchGenie supports rendering previews for **materials**, **collections**, and **objects**, including VDB volumes.
-
-![Batch Render](images/render_asset_previews.gif){ .img-box align=left}
-
-:material-chevron-left: **Advanced filtering** to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-
-<div style="clear:both"></div>
-
-:material-chevron-down: When rendering via the Asset Browser, you can work with **both internal and external Assets**, so you don't have to open each individual Asset Blend file separately.
-
-![Asset Browser Render](images/render_asset_previews_render_from_asset_browser.gif){ .img-box }
-
-#### Settings
-
-Easy controls for light and background settings to tailor the images to your liking.
-
-
-![Scene Settings](images/render_asset_previews_scene_settings[narrow].png){ .img-box align=left }
-
-![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box }
-
-<div style="clear:right"></div>
-
-:material-chevron-left: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
-
-<div style="clear:both"></div>
-
-:material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
-
-![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.75em; margin-bottom:-.95em" }
-
-![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
-
-<div style="clear:both"></div>
-
-</div> <!-- Render section end -->
-
-
-
-
 <div class="section-box accent-blue" markdown>
 
 ## :material-tools:{style="color:var(--main-accent-color-blue); font-size: 1.8rem;"}  Batch Utilities
 
 Utilities for efficiently managing materials and other assets. These tools work with both **local assets** in the current file **and external assets** through the Asset Browser, eliminating the need to open each individual Blend file separately. Built-in **parallel processing** when working with external assets, allowing multiple assets to be processed simultaneously in the background.
-
 
 ### Change Node Attributes
 
@@ -390,6 +387,14 @@ For details about the current version and updates, check the [Changelog](https:/
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
 - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
+- **Asset Rendering**:
+    - One click batch rendering making the process swift and efficient.
+    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
+    - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
+    - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
+    - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
+    - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
+
 - **Importing**:
     - **Texture Import**:
         - Blazingly fast imports.
@@ -409,15 +414,6 @@ For details about the current version and updates, check the [Changelog](https:/
 
 - **Exporting**:
     - Batch export objects, collections, and materials to blend files with ease. You can choose to export them as individual blend files or combine all selected assets into a single blend file. This feature is directly integrated into the Asset Browser for seamless access and functionality.
-
-
-- **Asset Preview Rendering**:
-    - One click batch rendering making the process swift and efficient.
-    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
-    - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
-    - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-    - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
-    - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
 - **Utilities**:
     - Utilities are available for working with your current blend file and are integrated into the Asset Browser for quick access.
