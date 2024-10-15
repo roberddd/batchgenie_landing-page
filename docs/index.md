@@ -127,9 +127,9 @@ Import **objects**, **collections**, and **materials** from multiple blend files
 
 Batch export **objects**, **collections**, and **materials**. Work either directly from the 3D viewport or via the **Asset Browser**, it's as easy as point and click.
 
-![Material Example](images/export_panel.gif){ .img-box  }
-![Material Example](images/export_settings.png){ .img-box  }
+![Material Example](images/export_blend.gif){ .img-box .margin-tight-horizontal  align=left } ![Material Example](images/export_settings.png){ .img-box .margin-tight-horizontal align=left  }
 
+<div style="clear:both"></div>
 
 ![Material Example](images/export_folder_structure_example.png){ .img-box align=left }
 
@@ -274,6 +274,17 @@ This utility includes options for aligning mesh names with object names and sync
 ![Reload Images](images/utility_reload_images.png){ .img-box align=right }
 
 If you have edited any of your textures externally and the changes are not visible in Blender, use this utility to reload all images in your your file.
+
+<div style="clear:both"></div>
+
+---
+
+### Set Origin
+
+![Reload Images](images/utility_set-origin.png){ .img-box align=left }
+
+Adjust the origin of Mesh objects to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box.
+
 
 <div style="clear:both"></div>
 
