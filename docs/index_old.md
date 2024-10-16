@@ -5,9 +5,9 @@ hide:
   - title
   - footer
 ---
-<center>**BatchGenie** is an add-on designed to simplify and automate common asset-related tasks in Blender and help you build your asset library.</center>
+Welcome to **BatchGenie**, an add-on designed to simplify and automate common Asset related tasks in Blender.
 
-# Key Features {style="margin-top:0"}
+# Key Features
 
 <div class="grid cards grid_custom" markdown>
 
@@ -43,7 +43,7 @@ hide:
 
 </div>
 
-<center>For a full breakdown of all features, check the '**Feature Summary**' section at the bottom.</center>
+> For a full breakdown of all features, check the '**Feature Summary**' section at the bottom.
 
 
 
@@ -54,21 +54,15 @@ hide:
 
 You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets **from the Asset Browser** for which you wish to render previews for. BatchGenie supports rendering previews for **materials**, **collections**, and **objects**, including VDB volumes.
 
+![Batch Render](images/render_asset_previews.gif){ .img-box align=left}
 
-<video width="69%" loop autoplay muted style="float:left; margin:-0.5em 0.75em 0 0;">
-    <source src="videos/render.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<br>  :material-chevron-left: When rendering via the Asset Browser, you can work with **both internal and external Assets**, so you don't have to open each individual Asset Blend file separately.
+:material-chevron-left: **Advanced filtering** to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
 
 <div style="clear:both"></div>
 
-![Batch Render](images/render_asset_previews.gif){ .img-box align=right style="margin-bottom:0"}
+:material-chevron-down: When rendering via the Asset Browser, you can work with **both internal and external Assets**, so you don't have to open each individual Asset Blend file separately.
 
-<br> :material-chevron-right: **Advanced filtering** to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-
-<div style="clear:both"></div>
+![Asset Browser Render](images/render_asset_previews_render_from_asset_browser.gif){ .img-box }
 
 #### Settings
 
@@ -79,15 +73,15 @@ Easy controls for light and background settings to tailor the images to your lik
 
 ![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box }
 
-<!-- <div style="clear:right"></div>
-
-:material-chevron-left: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser. -->
-
 <div style="clear:right"></div>
 
-:material-chevron-down: **Lighting and Studio presets** with custom HDRIs.
+:material-chevron-left: You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
 
-![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.5em; margin-bottom:-.95em" }
+<div style="clear:both"></div>
+
+:material-chevron-down: **Lighting and Studio presets** available, and you can add your own custom HDRIs to the list.
+
+![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.75em; margin-bottom:-.95em" }
 
 ![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
 
@@ -114,13 +108,13 @@ Supports for over 16 texture types, with fully automated setup for nodes, color 
 
 With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3 seconds.
 
-![Texture Import Settings](images/import_settings_expanded.png){ .img-box align=right width=40% style="margin-top:-.5em; " }
+![Texture Import Settings](images/import_settings_expanded.png){ .img-box align=right width=40% }
 
 <div style="clear:left"></div>
 
-#### Advanced Options :material-chevron-right:
+#### Advanced Options
 
-The image to the right highlights many of the available options, while the paragraphs below provide brief explanations of some of the more advanced or less obvious functions.
+:material-chevron-right: The image to the right highlights many of the available options, while the paragraphs below provide brief explanations of some of the more advanced or less obvious functions.
 
 ---
 
@@ -148,7 +142,7 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
 
 <figure markdown="span">
   ![Material Example](images/imported_material_example.png){ .img-box style="margin-top:-1em" }
-  <figcaption style="margin-top:0.25em">Example of an import with various additional accessory nodes.</figcaption>
+  <figcaption>Example of an import with various additional accessory nodes.</figcaption>
 </figure>
 
 <div style="clear:both"></div>
@@ -156,7 +150,7 @@ Import any map and connect it to your chosen input via a dropdown menu. Supports
 
 ### :material-blender-software:{style="color:var(--main-accent-color-red); font-size: 1.1rem;"} Importing Blend Files
 
-![Example Blend Import](images/import_blend-example(no-settings).gif){ .img-box  align=right }
+![Example Blend Import](images/import_blend-example.gif){ .img-box  align=right }
 
 Import **objects**, **collections**, and **materials** from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.
 
@@ -175,11 +169,11 @@ Import **objects**, **collections**, and **materials** from multiple blend files
 
 Batch export **objects**, **collections**, and **materials**. Work either directly from the 3D viewport or via the **Asset Browser**, it's as easy as point and click.
 
-![Material Example](images/export_blend.gif){ .img-box .margin-tight-horizontal align=left } ![Material Example](images/export_settings.png){ .img-box .margin-tight-horizontal align=left  }
+![Material Example](images/export_blend.gif){ .img-box .margin-tight-horizontal  align=left } ![Material Example](images/export_settings.png){ .img-box .margin-tight-horizontal align=left  }
 
 <div style="clear:both"></div>
 
-![Material Example](images/export_folder_structure_example.png){ .img-box align=left style="margin-top:-1em"}
+![Material Example](images/export_folder_structure_example.png){ .img-box align=left }
 
 :material-chevron-left: You can either export your items into one folder or keep the Outliner Hierarchy if needed.
 
@@ -284,16 +278,9 @@ If you have edited any of your textures externally and the changes are not visib
 
 ### Set Origin
 
-<!-- ![Set origin](images/utility_set-origin.png){ .img-box align=left } -->
+![Reload Images](images/utility_set-origin.png){ .img-box align=left }
 
-<video width="74%" loop autoplay muted style="float:left">
-    <source src="videos/utility_set-origin[900px].mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-Adjust the origin of objects to the minimum, maximum, or center along the X, Y, or Z axis.
-
-
+Adjust the origin of Mesh objects to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box.
 
 
 <div style="clear:both"></div>
@@ -442,5 +429,4 @@ For details about the current version and updates, check the [Changelog](https:/
     - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
     - Load previews from disk:  Directly load custom asset preview images from a specified directory.
     - Pack Textures: Easily pack textures for assets in the Asset Browser with a single click.
-    - Set Origin: Quickly set object origins.
     - Plus a few other small utilities!
