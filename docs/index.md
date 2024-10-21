@@ -72,10 +72,10 @@ You can either utilize Batch Rendering through the BatchGenie panel, or selectiv
 
 #### Settings
 
-Easy controls for light and background settings to tailor the images to your liking.
+Easy controls for light and background settings, along with ready-to-use presets, allow you to tailor the images to your liking.
 
 
-![Scene Settings](images/render_asset_previews_scene_settings[narrow].png){ .img-box align=left }
+![Scene Settings](images/render_scene-settings[narrow].gif){ .img-box align=left }
 
 ![Render Settings](images/render_asset_previews_render_settings.gif){ .img-box }
 
@@ -85,11 +85,13 @@ Easy controls for light and background settings to tailor the images to your lik
 
 <div style="clear:right"></div>
 
-:material-chevron-down: **Lighting and Studio presets** with custom HDRIs.
+<br>:material-chevron-down: **Presets, Lighting and Studio setups**
 
-![Render Settings](images/render_asset_previews_lighting_presets.png){ .img-box  style="margin-top:-.5em; margin-bottom:-.95em" }
+![Render Settings](images/render_presets.png){ .img-box  style="margin-top:-.5em;" }
 
-![Render Settings](images/render_asset_previews_studio_presets.png){ .img-box }
+![Render Settings](images/render_lighting-setups.png){ .img-box  style="margin-top:-.95em; margin-bottom:-.95em" }
+
+![Render Settings](images/render_studio-setups.png){ .img-box }
 
 <div style="clear:both"></div>
 
@@ -400,12 +402,12 @@ For details about the current version and updates, check the [Changelog](https:/
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
 - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
-- **Asset Rendering**:
+- **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
     - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
     - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
     - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-    - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
+    - Easy controls for lighting and background settings, enhanced with Render Presets to streamline setup. You can choose from ready-to-use lighting configurations that automatically adjust light parameters, including support for HDRI images.
     - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
 - **Importing**:
