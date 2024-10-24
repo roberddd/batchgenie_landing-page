@@ -85,13 +85,13 @@ Easy controls for light and background settings, along with ready-to-use presets
 
 <div style="clear:right"></div>
 
-<br>:material-chevron-down: **Presets, Lighting and Studio setups**
+<br>:material-chevron-down: **Presets, Lighting and Studio setups**.
 
-![Render Settings](images/render_presets.png){ .img-box  style="margin-top:-.5em;" }
+![Render Settings Presets](images/render_presets.png){ .img-box  style="margin-top:-.5em;" }
 
-![Render Settings](images/render_lighting-setups.png){ .img-box  style="margin-top:-.95em; margin-bottom:-.95em" }
+![Render Settings Lighting Setups](images/render_lighting-setups.png){ .img-box  style="margin-top:-.95em; margin-bottom:-.95em" }
 
-![Render Settings](images/render_studio-setups.png){ .img-box }
+![Render Settings Studio Setups](images/render_studio-setups.png){ .img-box }
 
 <div style="clear:both"></div>
 
@@ -177,11 +177,11 @@ Import **objects**, **collections**, and **materials** from multiple blend files
 
 Batch export **objects**, **collections**, and **materials**. Work either directly from the 3D viewport or via the **Asset Browser**, it's as easy as point and click.
 
-![Material Example](images/export_blend.gif){ .img-box .margin-tight-horizontal align=left } ![Material Example](images/export_settings.png){ .img-box .margin-tight-horizontal align=left  }
+![Export Example](images/export_blend.gif){ .img-box .margin-tight-horizontal align=left } ![Export Settings](images/export_settings.png){ .img-box .margin-tight-horizontal align=left  }
 
 <div style="clear:both"></div>
 
-![Material Example](images/export_folder_structure_example.png){ .img-box align=left style="margin-top:-1em"}
+![Export Folder Structure Example](images/export_folder_structure_example.png){ .img-box align=left style="margin-top:-1em"}
 
 :material-chevron-left: You can either export your items into one folder or keep the Outliner Hierarchy if needed.
 
